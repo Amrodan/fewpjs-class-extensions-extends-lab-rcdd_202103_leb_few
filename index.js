@@ -34,8 +34,8 @@ class Square extends Polygon {
      let side2 = this.shape[1]
      let side3 = this.shape[2]
      let side4 = this.shape[3]
-     if (this.count !== 4) {
+     if (this.count !== 3) {
        return;
      }
-     return ( ( side1 === side2 ) && ( side1 === side3 ) && ( side1 === side4 )  )
+     return ( ( side1 === side2 ) && ( side1 === side3 ) && ( side1 === side4 ) )
    } }
