@@ -41,9 +41,8 @@ class Square extends Polygon {
    }
 get area(as) {
 return let a = Math.PI * as * as
-  
+
 }
 
 
   }
-
