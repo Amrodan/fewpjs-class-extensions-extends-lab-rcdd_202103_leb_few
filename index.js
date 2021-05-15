@@ -40,7 +40,7 @@ class Square extends Polygon {
      return ( ( side1 === side2 ) && ( side1 === side3 ) && ( side1 === side4 ) )
    }
 get area() {
- let a = Math.PI * this.count * this.count
+ let a =   this.count * this.count
 return a
 }
 
