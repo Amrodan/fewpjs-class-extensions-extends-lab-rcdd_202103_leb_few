@@ -29,15 +29,13 @@ return this.shape.reduce((acc,cvalue)=>acc+cvalue)
     }
   }
 class Square extends Polygon {
-get isValid () {
-  let side1 = this.shape[0].length
-  let side2 = this.shape[1].length
-  let side3 = this.shape[2].length
-  let side4 = this.shape[3].length
-  if (this.count  == 4) {
-  ( ( side1 === side2 ) && ( side1 === side3 ) && ( side1 === side4 ))
-  return true
-}else{
-   return  false; }
-}
- }
+  get isValid() {
+     let side1 = this.sides[0]
+     let side2 = this.sides[1]
+     let side3 = this.sides[2]
+     let side4 = this.sides[3]
+     if (this.count !== 4) {
+       return;
+     }
+     return ( ( side1 === side2 ) && ( side1 === side3 ) && ( side2 === side3 ) && ( side3 === side4 ) )
+   } }
