@@ -40,11 +40,13 @@ class Square extends Polygon {
      return ( ( side1 === side2 ) && ( side1 === side3 ) && ( side1 === side4 ) )
    }
 get area() {
+  if (this.isValid) {
   let side1 = this.shape[0]
   let side2 = this.shape[1]
 
  let a =   this.side1 * this.side2
 return a
+}
 }
 
 
