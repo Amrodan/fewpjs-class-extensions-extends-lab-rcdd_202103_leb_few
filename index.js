@@ -41,8 +41,8 @@ class Square extends Polygon {
    }
    get area() {
      if (this.isValid) {
-       let side1 = this.sides[0]
-       let side2 = this.sides[1]
+       let side1 = this.shape[0]
+       let side2 = this.shape[1]
        return side1 * side2
      }
    }
