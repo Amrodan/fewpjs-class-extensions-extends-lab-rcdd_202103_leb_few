@@ -30,10 +30,10 @@ return this.shape.reduce((acc,cvalue)=>acc+cvalue)
   }
 class Square extends Polygon {
   get isValid() {
-     let side1 = this.sides[0]
-     let side2 = this.sides[1]
-     let side3 = this.sides[2]
-     let side4 = this.sides[3]
+     let side1 = this.shape[0]
+     let side2 = this.shape[1]
+     let side3 = this.shape[2]
+     let side4 = this.shape[3]
      if (this.count !== 4) {
        return;
      }
